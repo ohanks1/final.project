@@ -24,35 +24,26 @@
 
 <body>
   <!-- Place your site's HTML here -->
+   <div class="header">
+    <h1>Green Earth Apothecary</h1>
+  </div>
   <!-- Borrowed from W3-->
   <div class="navbar">
     <a href="./contact.html">Contact</a>
 
     <a href="./about.html">Profile</a> 
-
-    <div class="subnav">
-      <button class="subnavbtn">Work <a href="./work.html"></a> <i class="fa fa-caret-down"></i></button>
-      <div class="subnav-content">
-        <a href="./nefirtiti.html">Nefirtiti Series</a>
-        <a href="./self-ascendence.html">Self-Ascendence Series</a>
-        <a href="./zoom-in.html">Zoomed-In Series</a>
-        <a href="./am.politics.html">American Politics</a>
-        <a href="./paper.html">Paper Systems</a>
-        <a href="./tea.html">Tea
-        </a>
-      </div>
-    </div>
-     
+    <a href="./work.html">Work</a>
     <a href="./index.html">Home</a>
   </div> 
 
 <!-- Hero Section -->
-<section class="hero-section">
-<div class="hero-content">
-    <h1>Your Name</h1>
-    <img src="profile-picture.jpg" alt="Profile Picture">
+<div class="hero-section" style="background-image: url('./img/AdobeStock_657098900.jpeg');">
+  <div class="overlay"></div>
+  <div class="profile">
+    <img src="./img/39610-Sottsass.jpg" alt="Your Name">
+    <h1>Olivia Hanks</h1>
+  </div>
 </div>
-</section>
 
 <!-- About Me Section -->
 <section class="about-section">
@@ -102,46 +93,31 @@
 <!-- Services Section -->
 <section class="services-section">
 <h2>Services Offered</h2>
-<ul>
-    <li>Service 1</li>
-    <li>Service 2</li>
-    <li>Service 3</li>
-    <!-- Add more services as needed -->
-</ul>
-<button>Contact Me</button>
+<p>(Including but not limitied to):</p>
+
+<dl>
+  <dt>Graphics for Media/Publications </dt>
+  <dd>- Logos & Paper Systems</dd>
+  <dd>- Book Creations</dd>
+  <dd>- Media & Advertisements
+    <dd>- </dd>
+  </dd>
+  <dt>3D Models & Renders</dt>
+  <dt>Custom Art</dt>
+  <dd>- Life or Abstract Portraits</dd>
+  <dd>- Invitations & Stationary</dd>
+  <dd>- Paintings & Wall Decor</dd>
+</dl>
+
+<button class="contact">Contact Me</button>
 </section>
 
 <!-- Footer -->
-<footer id="site-footer">
-  <p>&copy; 2023 Your Website. All rights reserved.</p>
-</footer>
+<div class = "myFooter"> 
+  <p>&copy; 2023 Olivia Hanks Portfolio Website. All rights reserved.</p>
+</div>
 
-<script> 
-  document.addEventListener('DOMContentLoaded', function () 
-  {
-    // Function to check if the user has scrolled to the bottom
-    function isScrolledToBottom() {
-        return window.innerHeight + window.scrollY >= document.body.offsetHeight;
-    }
 
-    // Function to show or hide the footer based on scrolling
-    function toggleFooterVisibility() {
-        const footer = document.getElementById('site-footer');
-
-        if (isScrolledToBottom()) {
-            footer.style.display = 'block';
-        } else {
-            footer.style.display = 'none';
-        }
-    }
-
-    // Event listener for scroll events
-    window.addEventListener('scroll', toggleFooterVisibility);
-
-    // Initial check to determine footer visibility
-    toggleFooterVisibility();
-  });
-</script>
 <script src="script.js"></script>
 </body>
 
